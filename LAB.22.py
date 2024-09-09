@@ -7,12 +7,11 @@ Created on Fri Aug 30 21:22:43 2024
 
 a = float(input("Nhập vào giá trị của a: ")) 
 b = float(input("Nhập vào giá trị của b: ")) 
-p_t = f"Phương trình bậc nhất {a}x + {b} = 0"
 if a == 0:
     if b == 0:
-        print(f"{p_t} có vô số nghiệm")
+        print(f"Phương trình có vô số nghiệm")
     else:
-        print(f"{p_t} vô nghiệm")
+        print(f"Phương trình vô nghiệm")
 else:
     x = (-b) / a
-    print(f"{p_t} có nghiệm x = {x}")
+    print(f"Phương trình có nghiệm x = {x}")
