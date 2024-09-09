@@ -13,7 +13,7 @@ print(f"b. {dd}/{mm}/{yyyy % 100}")
 print(f"c. {yyyy}/{mm}/{dd}")
 
 nguoc_lai= input("Nhập ngày, tháng, năm theo định dạng dd/mm/yyyy hoặc dd/mm/yy hoặc yyyy/mm/dd: ")
-a,b,c= map(int, nguoc_lai.split("/"))
+a,b,c= map(str, nguoc_lai.split("/"))
 if len(a) <= 2:
  if len (c) <= 2:
   dd, mm, yy= map(int, (a,b,c))
