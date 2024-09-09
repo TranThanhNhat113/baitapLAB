@@ -6,7 +6,7 @@ Created on Fri Aug 30 21:20:49 2024
 """
 
 gio_mot = input("Nhập vào giờ thứ nhất (giờ,phút,giây): ")
-gio_hai = input("Nhập vào giời thứ hai (giờ,phút,giây): ")
+gio_hai = input("Nhập vào giờ thứ hai (giờ,phút,giây): ")
 h1, p1, s1 = map(int, gio_mot.split(','))
 h2, p2, s2 = map(int, gio_hai.split(','))
 giay_mot = h1 * 3600 + p1 *60 + s1
