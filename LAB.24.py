@@ -5,9 +5,10 @@ Created on Fri Aug 30 21:23:22 2024
 @author: PC
 """
 
-gio_phut_giay = input("Nhập vào giờ, phút, giây (hh:mm:ss): ")
-gio, phut, giay = map(int, gio_phut_giay.split(':'))
-if (0 <= gio <= 24) and (0 <= phut <= 60) and (0 <= giay <=60):
-    print(f"{gio_phut_giay} là hợp lệ")
+gio = int(input("Nhập giờ (0-23): "))
+phut = int(input("Nhập phút (0-59): "))
+giay = int(input("Nhập giây (0-59): "))
+if 0 <= gio <= 23 and 0 <= phut <= 59 and 0 <= giay <= 59:
+    print("Giờ, phút, giây hợp lệ.")
 else:
-    print(f"{gio_phut_giay} không hợp lệ")
+    print("Giờ, phút, giây không hợp lệ.")
