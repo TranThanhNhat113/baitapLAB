@@ -11,7 +11,7 @@ b = float(input("Nhập vào giá trị của b: "))
 c = float(input("Nhập vào giá trị của c: "))
 delta = (b ** 2) - (4 * a * c)
 if delta < 0:
-    print(f"Phương trình vô nghiệm")
+    print("Phương trình vô nghiệm")
 elif delta == 0:
     x = (-b) / (2 * a)
     print(f"Phương trình có 1 nghiệm kép x1 = x2 = {x}")
