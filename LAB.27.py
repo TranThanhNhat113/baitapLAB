@@ -6,7 +6,7 @@ Created on Fri Aug 30 21:25:36 2024
 """
 
 import math
-hinh = input("Nhập hình muốn tính chu vi (P) và diện tích (S) (v-vuông, n-chữ nhật, t-tròn): ")
+hinh = input("Nhập hình tính chu vi (P) và diện tích (S) (v-vuông, n-chữ nhật, t-tròn): ")
 if hinh == 'v':
     canh = float(input("Nhập độ dài cạnh (m): "))
     chu_vi = canh * 4
