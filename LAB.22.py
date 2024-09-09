@@ -9,9 +9,9 @@ a = float(input("Nhập vào giá trị của a: "))
 b = float(input("Nhập vào giá trị của b: ")) 
 if a == 0:
     if b == 0:
-        print(f"Phương trình có vô số nghiệm")
+        print("Phương trình có vô số nghiệm")
     else:
-        print(f"Phương trình vô nghiệm")
+        print("Phương trình vô nghiệm")
 else:
     x = (-b) / a
     print(f"Phương trình có nghiệm x = {x}")
