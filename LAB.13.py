@@ -5,9 +5,9 @@ Created on Tue Aug 27 18:46:57 2024
 @author: Student
 """
 
-dd= input("Nhập ngày: ")
-mm= input("Nhập tháng: ")
-yyyy= input("Nhập năm: ")
+dd = int(input("Nhập vào ngày sinh: "))
+mm = int(input("Nhập vào tháng sinh: "))
+yyyy = int(input("Nhập vào năm sinh: "))
 print(f"a. {dd}/{mm}/{yyyy}")
 print(f"b. {dd}/{mm}/{yyyy % 100}")
 print(f"c. {yyyy}/{mm}/{dd}")
