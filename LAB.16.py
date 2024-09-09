@@ -5,14 +5,7 @@ Created on Fri Aug 30 21:04:45 2024
 @author: PC
 """
 
-thoi_gian = input("Nhập vào thời gian giờ (h) phút (p) giây (s) (..h..p..s): ")
-so = ""
-for i in thoi_gian:
-    if i.isalpha():
-        so += ":"
-    else:
-        so += i
-final_so = so[:-1]
-h, p, s = map(int, final_so.split(':'))
-giay = h * 3600 + p * 60 + s
-print(f"{thoi_gian} đổi thành {giay} giây")
+nhap_thoi_gian = input("Nhập thời gian (..h..p..s): ")
+gio, phut, giay = map(int, nhap_thoi_gian.replace('h', '/').replace('p', '/').replace('s', '').split('/'))
+tong_giay = gio * 3600 + phut * 60 + giay
+print(f"Tổng số giây: {tong_giay}")
